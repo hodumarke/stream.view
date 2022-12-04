@@ -13,6 +13,7 @@ import pandas as pd
 from pandas.io.json import json_normalize
 import json
 import matplotlib.pyplot as plt
+import streamlit as st
 
 url = 'http://apis.data.go.kr/1360000/AsosHourlyInfoService/getWthrDataList'
 service_key='olagdtOMmxo/SGViApo7KMrckkJA4LTnnQuWlhzeWv0+3gHV6RA8o+YAKxvQBy+juX4G4aAfN2Pl29K69jWi8w=='
@@ -49,3 +50,5 @@ ax.plot(df['tm'],df['ts'],color='r',lw=1.5,alpha=0.7)
 ax.set_ylabel('temp', fontweight='bold', fontsize=12)
 ax.set_xlabel('date', fontweight='bold', fontsize=12)
 ax.set_title('temp data', fontweight = 'bold',fontsize = 14)
+
+st.pypiot(ax)
