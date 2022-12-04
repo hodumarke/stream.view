@@ -51,4 +51,4 @@ ax.set_ylabel('temp', fontweight='bold', fontsize=12)
 ax.set_xlabel('date', fontweight='bold', fontsize=12)
 ax.set_title('temp data', fontweight = 'bold',fontsize = 14)
 
-st.pypiot(ax)
+st.pyplot(ax)
